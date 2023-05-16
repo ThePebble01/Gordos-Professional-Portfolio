@@ -10,24 +10,26 @@
   <body>
     <header>
       <h2>John Gordos</h2>
-      <div>Email: john.gordos@outlook.com</div>
+      <div>
+        Email:
+        <a href="mailto:john.gordos@outlook.com">john.gordos@outlook.com</a>
+      </div>
       <div>Cell: <a href="#">9999999999</a></div>
       <div>
         Github:
         <a href="https://github.com/ThePebble01" target="_blank">ThePebble01</a>
       </div>
-      <div><a href="#">About Me</a></div>
-      <div><a href="#">Work Showcase</a></div>
+      <div><a href="#about-me">About Me</a></div>
+      <div><a href="#projects">Project Showcase</a></div>
     </header>
     <main>
-      <section class="about-me">
+      <section id="about-me">
+        <h2>About Me</h2>
         <p>
           Raised in the
           <span id="cc">
             City of Commerce
             <span id="destination-cc">
-              <!-- TODO: Make the iframe persist or add text telling visitors to maximize the video
-              ...this needs to be a simple link if I decide to keep it. -->
               <iframe
                 width="560"
                 height="315"
@@ -39,29 +41,48 @@
               ></iframe>
             </span>
           </span>
-          back in the 90's, John Gordos has wandered and wondered about how to
-          serve his remaining time. Taking up the modern mantle of his
-          ancestors, he has decided to become a carpetner of bits (hence this
+          back in the 90's, John has wandered and wondered how to serve his
+          remaining time. Taking up the modern mantle of his ancestor's
+          profession, he has decided to become a carpenter of bits (hence this
           site). Check out some of his work below! Maybe
-          <span class="emphasis">you</span> can decide what's next!
+          <span class="bolder">you</span> can decide what he works on next!
         </p>
         <img
           src="./assets/images/john-gordos.png"
           alt="Nerdy picture of the developer."
         />
       </section>
-      <section class="work">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          eius?
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          eius?
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          eius?
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-links">
+          <div class="project-item first-item">
+            <h3>TBD - Salesforce Contact Form</h3>
+            <a href="#">
+              <img
+                id="salesforce-logo"
+                src="./assets/images/Salesforce-logo.jpg"
+                alt="Salesforce cloud logo"
+              />
+            </a>
+          </div>
+          <div class="project-item">
+            <h3>TBD - Rock, Paper Scissors</h3>
+            <a href="#">
+              <img
+                src="./assets/images/sebastiaan-stam-robo-gamer.jpg"
+                alt="Robo gamer dominating but not being a bigot."
+              />
+            </a>
+          </div>
+          <div class="project-item">
+            <h3>TBD - Nested, Nested, Nested Flexbox Demo</h3>
+            <a href="#">
+              <img
+                src="./assets/images/fibonacci-flexbox-icon.png"
+                alt="Flexboxes within flexboxes foreverrrrr....."
+              />
+            </a>
+          </div>
         </div>
       </section>
     </main>
