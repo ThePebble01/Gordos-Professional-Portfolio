@@ -9,38 +9,46 @@
   </head>
   <body>
     <header>
-      <img
-        src="./assets/images/john-gordos.png"
-        alt="Nerdy picture of the developer."
-      />
-      <ul>
-        <li><h2>John Gordos</h2></li>
-        <li>Email: john.gordos@outlook.com</li>
-        <!-- TODO: ask if I need to add a legitimate cell phone -->
-        <li>Cell: <a href="#">9999999999</a></li>
-        <li>
-          Github:
-          <a href="https://github.com/ThePebble01" target="_blank"
-            >ThePebble01</a
-          >
-        </li>
-      </ul>
-      <ul>
-        <li><a href="#">About Me</a></li>
-        <!-- POTENTIAL TODO: convert the work showcase to a <select> 
-              where the options link directly to the work item 
-              a default option will link the visitor directly to the work showcase section
-          -->
-        <li><a href="#">Work Showcase</a></li>
-      </ul>
+      <h2>John Gordos</h2>
+      <div>Email: john.gordos@outlook.com</div>
+      <div>Cell: <a href="#">9999999999</a></div>
+      <div>
+        Github:
+        <a href="https://github.com/ThePebble01" target="_blank">ThePebble01</a>
+      </div>
+      <div><a href="#">About Me</a></div>
+      <div><a href="#">Work Showcase</a></div>
     </header>
     <main>
       <section class="about-me">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          porro minus voluptatem ratione ducimus officia repellat nihil ab
-          obcaecati necessitatibus.
+          Raised in the
+          <span id="cc">
+            City of Commerce
+            <span id="destination-cc">
+              <!-- TODO: Make the iframe persist or add text telling visitors to maximize the video
+              ...this needs to be a simple link if I decide to keep it. -->
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ii6CAaWfcpo"
+                title="Destination Commerce City"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </span>
+          </span>
+          back in the 90's, John Gordos has wandered and wondered about how to
+          serve his remaining time. Taking up the modern mantle of his
+          ancestors, he has decided to become a carpetner of bits (hence this
+          site). Check out some of his work below! Maybe
+          <span class="emphasis">you</span> can decide what's next!
         </p>
+        <img
+          src="./assets/images/john-gordos.png"
+          alt="Nerdy picture of the developer."
+        />
       </section>
       <section class="work">
         <div>

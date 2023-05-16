@@ -2,7 +2,7 @@
   --forest-green: #228b22;
 }
 * {
-  background-color: #8fbc8b;
+  background-color: #bcd0c7;
 }
 header {
   display: flex;
@@ -11,25 +11,51 @@ header {
 }
 header > * {
   margin: 10px;
+  width: 66%;
   background-color: var(--forest-green);
 }
-header img {
+header > h2 {
+  background-color: var(--forest-green);
+}
+header > div > a {
+  background-color: var(--forest-green);
+}
+/* main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+} */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+  border: 2px solid black;
+}
+.about-me p {
+  padding: 5%;
+}
+.emphasis {
+  font-weight: bolder;
+}
+#cc {
+  text-decoration: underline;
+  font-weight: bolder;
+  text-decoration-color: red;
+}
+#destination-cc {
+  display: none;
+  position: absolute;
+  width: 560px;
+}
+
+#cc:hover #destination-cc {
+  display: block;
+}
+.about-me img {
   width: 20%;
   height: auto;
-}
-header > ul {
-  width: 66%;
-  background-color: var(--forest-green);
-}
-header > ul > li {
-  width: 66%;
-  padding: 2%;
-  background-color: var(--forest-green);
-}
-header > ul > li > * {
-  background-color: var(--forest-green);
-}
-main {
-  margin-top: 5%;
-  border: 2px solid black;
+  margin-bottom: 2%;
 }
