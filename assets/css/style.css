@@ -1,0 +1,35 @@
+:root {
+  --forest-green: #228b22;
+}
+* {
+  background-color: #8fbc8b;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--forest-green);
+}
+header > * {
+  margin: 10px;
+  background-color: var(--forest-green);
+}
+header img {
+  width: 20%;
+  height: auto;
+}
+header > ul {
+  width: 66%;
+  background-color: var(--forest-green);
+}
+header > ul > li {
+  width: 66%;
+  padding: 2%;
+  background-color: var(--forest-green);
+}
+header > ul > li > * {
+  background-color: var(--forest-green);
+}
+main {
+  margin-top: 5%;
+  border: 2px solid black;
+}
