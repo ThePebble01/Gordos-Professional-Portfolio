@@ -2,7 +2,9 @@
 
 ## Description
 
-A work in progress portfolio of my work and how to contact me. The items mentioned under 'Projects' are not complete but will be filled in and fleshed out as the course continues. Eventually, a contact/suggestion form will be added to the bottom of the page (replacing the Salesforce contact form project), allowing individuals to open a case directly in my developer org.
+A work in progress portfolio of my work and how to contact me. The items mentioned under 'Projects' are not complete but will be filled in and fleshed out as the course continues.
+
+A contact or suggestion form will eventually be added to the bottom of the page (replacing the Salesforce contact form project), allowing individuals to reach out directly from the webpage.
 
 ## Usage
 
