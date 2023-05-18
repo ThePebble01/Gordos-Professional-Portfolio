@@ -6,6 +6,8 @@ A work in progress portfolio of my work and how to contact me. The items mention
 
 A contact or suggestion form will eventually be added to the bottom of the page (replacing the Salesforce contact form project), allowing individuals to reach out directly from the webpage.
 
+![Image of Portfolio on Mobile](assets\images\mobile-portfolio-view.png?raw=true)
+
 ## Usage
 
 View the app!
