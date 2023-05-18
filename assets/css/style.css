@@ -1,9 +1,10 @@
 :root {
-  --forest-green: #dbe6e1;
+  --forest-green: #368748;
   --solid-black-bottom: 2px solid black;
 }
 * {
-  background-color: #bcd0c7;
+  background-color: #8ec49a;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 header {
   display: flex;
@@ -27,20 +28,8 @@ header > div > a {
   border-bottom: var(--solid-black-bottom);
 }
 #about-me p {
-  padding: 5%;
-}
-#cc {
-  text-decoration: underline;
-  font-weight: bolder;
-  text-decoration-color: red;
-}
-#destination-cc {
-  display: none;
-  position: absolute;
-  width: 560px;
-}
-#cc:hover #destination-cc {
-  display: block;
+  padding: 2%;
+  font-size: large;
 }
 .bolder {
   font-weight: bolder;
@@ -61,32 +50,36 @@ header > div > a {
 }
 .project-links {
   display: flex;
-  flex-wrap: wrap;
   width: 80%;
-  padding: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.secondary-projects {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
 }
 .project-item {
-  width: 33%;
-  padding: 1%;
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
+  overflow: hidden;
+  border: 1px solid black;
 }
 .project-item h3 {
   padding: 5%;
-  background: #13293d;
-  color: #fff;
-  border-radius: 5%;
+  background: #badcc2;
 }
 #salesforce-logo {
   width: 90%;
 }
-.project-item a img {
-  width: 45%;
-  height: auto;
-  padding-top: 1%;
+#robo-gamer,
+#nested-boxes {
+  width: 30%;
 }
-
+.project-item a img {
+  width: 60%;
+  height: auto;
+  padding: 1%;
+}
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -106,7 +99,10 @@ header > div > a {
     align-items: center;
     text-align: center;
   }
-  .first-item {
-    width: 66%;
+  .project-item {
+    margin-top: 2px;
+  }
+  .secondary-projects {
+    margin-left: 0px;
   }
 }
