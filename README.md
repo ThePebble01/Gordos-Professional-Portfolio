@@ -12,7 +12,7 @@ A contact or suggestion form will eventually be added to the bottom of the page 
 
 View the app!
 
-https://thepebble01.github.io/Module-02-Challenge-Portfolio/
+https://thepebble01.github.io/Gordos-Professional-Portfolio/
 
 ## Credits
 
