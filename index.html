@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>John Gordos - Portfolio</title>
@@ -20,7 +21,7 @@
         <a href="https://github.com/ThePebble01" target="_blank">ThePebble01</a>
       </div>
       <div><a href="#about-me">About Me</a></div>
-      <div><a href="#projects">Project Showcase</a></div>
+      <div><a href="#projects">Projects</a></div>
     </header>
     <main>
       <section id="about-me">
@@ -37,9 +38,9 @@
           alt="Nerdy picture of the developer."
         />
       </section>
-      <section id="projects">
+      <section id="projects" class="container">
         <h2>Projects</h2>
-        <div class="project-links">
+        <div class="project-items">
           <div class="project-item">
             <h3>TBD - Salesforce Contact Form</h3>
             <a href="#">
@@ -73,6 +74,20 @@
               </a>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="contact" class="container">
+        <h2>Contact</h2>
+        <div class="form-container">
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+            <input type=hidden name="orgid" value="00D1a000000KLMa">
+            <input type=hidden name="retURL" value="https://thepebble01.github.io/Gordos-Professional-Portfolio/">
+            <label for="name">Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+            <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+            <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text"/><br>
+            <label for="description">Feedback</label><textarea name="description"></textarea><br>
+            <input id="contact-submit" type="submit" name="submit">
+          </form>
         </div>
       </section>
     </main>
