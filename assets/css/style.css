@@ -12,11 +12,9 @@ header {
   text-align: center;
   position: fixed;
   width: 100%;
-    top: 0;
-  background-color: var(--forest-green);
-  position: fixed;
   top: 0;
-  width: 100%;
+  background-color: var(--forest-green);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
 }
 header > * {
   margin: 2%;
@@ -93,27 +91,19 @@ main {
   height: auto;
   padding: 1%;
 }
-.form-container{
-  display:flex;
+.form-container {
+  display: flex;
   justify-content: center;
   width: 80%;
   padding-left: 2%;
   padding-top: 2%;
 }
 form {
-  width: 100%;
-  background: #57b76c;
-  padding: 3em;
-  height: 320px;
+  width: 80%;
   border-radius: 20px;
-  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-  text-align: center;
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: all 0.2s ease-in-out;
-}
-label input{
-  text-align: center;
-  transform: translate(-50%,-50%);
 }
 @media screen and (max-width: 768px) {
   header {
