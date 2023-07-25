@@ -2,45 +2,47 @@
 //https://react-bootstrap.netlify.app/docs/forms/overview
 //form-group, form-control btn btn-primary
 import Form from "react-bootstrap/Form";
-function ContactForm(props) {
+import Button from "react-bootstrap/Button";
+function ContactForm({ handleOnBlur }) {
   return (
     <Form noValidate>
       <Form.Group className="mb-3">
         <Form.Label>Name</Form.Label>
         <Form.Control
-          id="name"
+          name="name"
           type="text"
-          onBlur={props.handleOnBlur}
+          onBlur={handleOnBlur}
           placeholder="What is your name?"
         />
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Email address</Form.Label>
         <Form.Control
-          id="email"
+          name="email"
           type="email"
-          onBlur={props.handleOnBlur}
+          onBlur={handleOnBlur}
           placeholder="What is your email?"
         />
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Subject</Form.Label>
         <Form.Control
-          id="subject"
+          name="subject"
           type="text"
-          onBlur={props.handleOnBlur}
+          onBlur={handleOnBlur}
           placeholder="Why are you reaching out?"
         />
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Description</Form.Label>
         <Form.Control
-          id="description"
+          name="description"
           as="textarea"
-          onBlur={props.handleOnBlur}
+          onBlur={handleOnBlur}
           placeholder="What are the details of your outreach?"
         />
       </Form.Group>
+      <Button type="submit">Submit</Button>
     </Form>
   );
 }

@@ -1,17 +1,21 @@
 //obfuscate org id, move post to f() w/n contact.js
 import { useState } from "react";
 import "./contact.css";
-import ContactForm from "./contact-form/contact-form";
-import FormErrors from "./form-errors/form-errors.js";
+import ContactForm from "./contactForm/contactForm";
+import FormErrors from "./formErrors/formErrors.js";
 function Contact() {
   let [errorMessage, setError] = useState();
   const handleOnBlur = (event) => {
     const input = event.currentTarget;
     if (!input.value || input.value == "") {
-      setError(`${input.id} is required!`);
+      setError(
+        `${
+          input.name.charAt(0).toUpperCase() + input.name.slice(1)
+        } is required!`
+      );
       return;
     } else if (
-      input.id == "email" &&
+      input.name == "email" &&
       !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(input.value)
     ) {
       setError(`Please enter a valid email!`);
