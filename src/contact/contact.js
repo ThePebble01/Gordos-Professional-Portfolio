@@ -1,4 +1,3 @@
-//obfuscate org id, move post to f() w/n contact.js
 import { useState } from "react";
 import "./contact.css";
 import ContactForm from "./contactForm/contactForm";

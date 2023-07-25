@@ -1,5 +1,5 @@
 import devPicture from "./john-gordos.png";
-import "./about-me.css";
+import "./aboutMe.css";
 
 function App() {
   return (
