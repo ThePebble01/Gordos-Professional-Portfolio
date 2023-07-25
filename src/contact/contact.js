@@ -4,18 +4,27 @@ import "./contact.css";
 import ContactForm from "./contact-form/contact-form";
 import FormErrors from "./form-errors/form-errors.js";
 function Contact() {
-  let [messageValue, setValue] = useState(0);
+  let [errorMessage, setError] = useState();
   const handleOnBlur = (event) => {
     const input = event.currentTarget;
-    console.log(input.value);
-    setValue(input.value);
+    if (!input.value || input.value == "") {
+      setError(`${input.id} is required!`);
+      return;
+    } else if (
+      input.id == "email" &&
+      !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(input.value)
+    ) {
+      setError(`Please enter a valid email!`);
+      return;
+    }
+    setError(null);
   };
   return (
     <section id="contact" className="container">
       <h2>Contact</h2>
       <ContactForm handleOnBlur={handleOnBlur} />
       <br />
-      <FormErrors message={messageValue} />
+      <FormErrors errorMessage={errorMessage} />
     </section>
   );
 }
