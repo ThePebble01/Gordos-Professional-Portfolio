@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
+import Navigation from "../navigation/navigation.js";
 import "./header.css";
 
 function Header() {
   return (
     <header>
-      <Link to={"/"}>About Me</Link>
-      <Link to={"/blog"}>Projects</Link>
-      <Link to={"/contact"}>Contact</Link>
+      <Navigation />
     </header>
   );
 }
