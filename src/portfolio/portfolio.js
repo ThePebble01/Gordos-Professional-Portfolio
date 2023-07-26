@@ -1,13 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
-import travelBuddyImage from "./images/travel-buddy.png";
 import PortfolioItem from "./portfolioItem/portfolioItem.js";
 import { portfolioData } from "./protfolioData.js";
-//import project
-//take name, img src, link,
-// this will act as the carosel controller
 function Portfolio() {
   return (
-    <Carousel controls={true} interval={10000} data-bs-theme="dark">
+    <Carousel controls={true} interval={10000}>
       {portfolioData.map((item) => {
         return (
           <Carousel.Item>

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-//import "./index.css";
 import "bootstrap/dist/css/bootstrap.css"; //review styling for about and projects...incorporate bootstrap
+import "./index.css";
 import AboutMe from "./aboutMe/aboutMe.js";
 import Footer from "./footer/footer.js";
 import Header from "./header/header.js";

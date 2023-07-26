@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Navigation from "../navigation/navigation.js";
 import "./header.css";
 

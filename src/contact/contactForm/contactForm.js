@@ -1,6 +1,3 @@
-//https://react-bootstrap.netlify.app/docs/getting-started/introduction
-//https://react-bootstrap.netlify.app/docs/forms/overview
-//form-group, form-control btn btn-primary
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 function ContactForm({ handleOnBlur }) {

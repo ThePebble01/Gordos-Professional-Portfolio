@@ -1,8 +1,21 @@
-.project-item-container {
+.portfolio-item-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-bottom: 2%;
+}
+.link-container {
+  display: flex;
+  justify-content: space-between;
+}
+.link-container a {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.item-description {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 img {
   width: 50%;

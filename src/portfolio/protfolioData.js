@@ -43,7 +43,7 @@ export const portfolioData = [
     ],
   },
   {
-    name: "Progressive Web Application Demo With Just A Text Editor",
+    name: "Progressive Web Application Demo With Just Another Text Editor",
     deployLink: "https://jg-pwa-text-editor-29395f144ed6.herokuapp.com/",
     repoLink: "https://github.com/ThePebble01/text-editor",
     imgSrc: pwaTextEditorImage,

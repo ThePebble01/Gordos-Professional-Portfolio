@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./contact.css";
 import ContactForm from "./contactForm/contactForm";
 import FormErrors from "./formErrors/formErrors.js";
 function Contact() {
