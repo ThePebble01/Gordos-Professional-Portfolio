@@ -1,0 +1,10 @@
+.project-item-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2%;
+}
+img {
+  width: 50%;
+  height: 50%;
+}

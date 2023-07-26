@@ -5,6 +5,7 @@ import "./header.css";
 function Header() {
   return (
     <header>
+      <h1>John Gordos</h1>
       <Navigation />
     </header>
   );
