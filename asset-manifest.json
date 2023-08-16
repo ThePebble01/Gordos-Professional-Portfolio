@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gordos-Professional-Portfolio/static/css/main.d3c2822f.css",
-    "main.js": "/Gordos-Professional-Portfolio/static/js/main.8cd0cd56.js",
+    "main.js": "/Gordos-Professional-Portfolio/static/js/main.4600dcd7.js",
     "static/media/travel-buddy.png": "/Gordos-Professional-Portfolio/static/media/travel-buddy.b017f19ed0cd41fa5d48.png",
     "static/media/john-gordos.png": "/Gordos-Professional-Portfolio/static/media/john-gordos.646667d1714fdfef8bfc.png",
     "static/media/john-gordos-resume.pdf": "/Gordos-Professional-Portfolio/static/media/john-gordos-resume.b39e1a39477adbbd7995.pdf",
@@ -11,10 +11,10 @@
     "static/media/pwa-text-editor.png": "/Gordos-Professional-Portfolio/static/media/pwa-text-editor.aff24fbe21e63e608944.png",
     "index.html": "/Gordos-Professional-Portfolio/index.html",
     "main.d3c2822f.css.map": "/Gordos-Professional-Portfolio/static/css/main.d3c2822f.css.map",
-    "main.8cd0cd56.js.map": "/Gordos-Professional-Portfolio/static/js/main.8cd0cd56.js.map"
+    "main.4600dcd7.js.map": "/Gordos-Professional-Portfolio/static/js/main.4600dcd7.js.map"
   },
   "entrypoints": [
     "static/css/main.d3c2822f.css",
-    "static/js/main.8cd0cd56.js"
+    "static/js/main.4600dcd7.js"
   ]
 }
