@@ -1,12 +1,25 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-function ContactForm({ handleOnBlur }) {
+import { d } from "../d.js";
+import { x } from "../../aboutMe/x.js";
+import { s } from "../../footer/s.js";
+export default function ContactForm({ handleOnBlur, handleOnSubmit }) {
+  function collectFormData(e) {
+    e.preventDefault();
+    const oid = d + x + s;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const description = document.getElementById("description").value;
+    const retUrl = "/contact";
+    handleOnSubmit({ oid, name, email, subject, description, retUrl });
+  }
   return (
-    <Form noValidate>
+    <Form noValidate onSubmit={collectFormData}>
       <Form.Group className="mb-3">
         <Form.Label>Name</Form.Label>
         <Form.Control
-          name="name"
+          id="name"
           type="text"
           onBlur={handleOnBlur}
           placeholder="What is your name?"
@@ -15,7 +28,7 @@ function ContactForm({ handleOnBlur }) {
       <Form.Group className="mb-3">
         <Form.Label>Email address</Form.Label>
         <Form.Control
-          name="email"
+          id="email"
           type="email"
           onBlur={handleOnBlur}
           placeholder="What is your email?"
@@ -24,7 +37,7 @@ function ContactForm({ handleOnBlur }) {
       <Form.Group className="mb-3">
         <Form.Label>Subject</Form.Label>
         <Form.Control
-          name="subject"
+          id="subject"
           type="text"
           onBlur={handleOnBlur}
           placeholder="Why are you reaching out?"
@@ -33,7 +46,7 @@ function ContactForm({ handleOnBlur }) {
       <Form.Group className="mb-3">
         <Form.Label>Description</Form.Label>
         <Form.Control
-          name="description"
+          id="description"
           as="textarea"
           onBlur={handleOnBlur}
           placeholder="What are the details of your outreach?"
@@ -43,5 +56,3 @@ function ContactForm({ handleOnBlur }) {
     </Form>
   );
 }
-
-export default ContactForm;
