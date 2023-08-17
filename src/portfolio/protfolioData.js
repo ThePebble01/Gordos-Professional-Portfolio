@@ -6,8 +6,8 @@ import passwordGeneratorImage from "./images/password-generator.png";
 export const portfolioData = [
   {
     name: "Travel Buddy",
-    deployLink: "https://dsstad.github.io/travel-weather/",
-    repoLink: "https://github.com/DSStad/travel-weather",
+    deployLink: "https://thepebble01.github.io/travel-weather/",
+    repoLink: "https://github.com/ThePebble01/travel-weather",
     imgSrc: travelBuddyImage,
     imgAlt:
       "Travel Buddy interface showing a route from Colorado to New Mexico with weather along the way.",
