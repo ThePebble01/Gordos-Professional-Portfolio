@@ -7,7 +7,6 @@ import Footer from "./footer/footer.js";
 import Header from "./header/header.js";
 import Contact from "./contact/contact.js";
 import Portfolio from "./portfolio/portfolio.js";
-import Resume from "./resume/resume.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +17,6 @@ root.render(
       <Route path="/*" element={<AboutMe />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/resume" element={<Resume />} />
     </Routes>
     <Footer />
   </Router>
