@@ -1,29 +1,21 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-function ContactForm({ handleOnBlur }) {
-  function handleOnSubmit(e) {
+import { d } from "../d.js";
+import { x } from "../../aboutMe/x.js";
+import { s } from "../../footer/s.js";
+export default function ContactForm({ handleOnBlur, handleOnSubmit }) {
+  function collectFormData(e) {
     e.preventDefault();
-    const oid = ""; //scramble....
+    const oid = d + x + s;
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const subject = document.getElementById("subject").value;
     const description = document.getElementById("description").value;
     const retUrl = "/contact";
-    fetch(
-      `https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgid=${oid}&retURL=${retUrl}&name=${name}&subject=${subject}&description=${description}&email=${email}&submit=Submit`,
-      {
-        method: "POST",
-        mode: "no-cors",
-      }
-    )
-      .then((response) => response.text())
-      .then((result) => {
-        console.log("result", result); //set success message
-      })
-      .catch((error) => console.log("error", error));
+    handleOnSubmit({ oid, name, email, subject, description, retUrl });
   }
   return (
-    <Form noValidate onSubmit={handleOnSubmit}>
+    <Form noValidate onSubmit={collectFormData}>
       <Form.Group className="mb-3">
         <Form.Label>Name</Form.Label>
         <Form.Control
@@ -64,5 +56,3 @@ function ContactForm({ handleOnBlur }) {
     </Form>
   );
 }
-
-export default ContactForm;
