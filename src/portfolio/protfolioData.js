@@ -61,7 +61,7 @@ export const portfolioData = [
     imgAlt:
       "Landing page for the quiz, describing that there are 20 questions to complete within a minute.",
     description:
-      "This application serves a javascript quiz for users.  It involves experimentation with setInterval where every wrong answer effectively deducts 5 seconds.  Local Storage is used to track high scores.",
+      "This application serves a javascript quiz for users.  Local Storage is used to track high scores.",
     technologies: ["Javascript", "JQuery", "LocalStorage"],
   },
   {
@@ -71,7 +71,7 @@ export const portfolioData = [
     imgSrc: passwordGeneratorImage,
     imgAlt: "Password generator landing page",
     description:
-      "One of the first projects in the bootcamp, this application uses the browser's api to prompt the user for input in order to generate a password.",
-    technologies: ["Javascript"],
+      "Generates a password based on the parameters provided by the user.",
+    technologies: ["Javascript", "React"],
   },
 ];
