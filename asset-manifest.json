@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/Gordos-Professional-Portfolio/static/css/main.d3c2822f.css",
-    "main.js": "/Gordos-Professional-Portfolio/static/js/main.00c0289f.js",
+    "main.js": "/Gordos-Professional-Portfolio/static/js/main.d0d72c3c.js",
     "static/media/travel-buddy.png": "/Gordos-Professional-Portfolio/static/media/travel-buddy.b017f19ed0cd41fa5d48.png",
     "static/media/john-gordos.png": "/Gordos-Professional-Portfolio/static/media/john-gordos.646667d1714fdfef8bfc.png",
-    "static/media/john-gordos-resume.pdf": "/Gordos-Professional-Portfolio/static/media/john-gordos-resume.b39e1a39477adbbd7995.pdf",
     "static/media/fruit-finder.png": "/Gordos-Professional-Portfolio/static/media/fruit-finder.6e7ab6ed1a9587f95c48.png",
     "static/media/password-generator.png": "/Gordos-Professional-Portfolio/static/media/password-generator.10f5bd6b51a5ed7fb55b.png",
     "static/media/javascript-quiz.png": "/Gordos-Professional-Portfolio/static/media/javascript-quiz.5b225f87e3c1c6ea13d6.png",
     "static/media/pwa-text-editor.png": "/Gordos-Professional-Portfolio/static/media/pwa-text-editor.aff24fbe21e63e608944.png",
     "index.html": "/Gordos-Professional-Portfolio/index.html",
     "main.d3c2822f.css.map": "/Gordos-Professional-Portfolio/static/css/main.d3c2822f.css.map",
-    "main.00c0289f.js.map": "/Gordos-Professional-Portfolio/static/js/main.00c0289f.js.map"
+    "main.d0d72c3c.js.map": "/Gordos-Professional-Portfolio/static/js/main.d0d72c3c.js.map"
   },
   "entrypoints": [
     "static/css/main.d3c2822f.css",
-    "static/js/main.00c0289f.js"
+    "static/js/main.d0d72c3c.js"
   ]
 }
