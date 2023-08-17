@@ -7,7 +7,6 @@ import Footer from "./footer/footer.js";
 import Header from "./header/header.js";
 import Contact from "./contact/contact.js";
 import Portfolio from "./portfolio/portfolio.js";
-import Resume from "./resume/resume.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
