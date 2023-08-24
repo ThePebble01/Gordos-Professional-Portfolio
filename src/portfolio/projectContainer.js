@@ -1,10 +1,10 @@
 import Carousel from "react-bootstrap/Carousel";
 import PortfolioItem from "./portfolioItem/portfolioItem.js";
-import { portfolioData } from "./protfolioData.js";
-function Portfolio() {
+import { projectData } from "./projectData.js";
+function ProjectContainer() {
   return (
     <Carousel controls={true} interval={10000}>
-      {portfolioData.map((item) => {
+      {projectData.map((item) => {
         return (
           <Carousel.Item>
             <PortfolioItem
@@ -22,4 +22,4 @@ function Portfolio() {
     </Carousel>
   );
 }
-export default Portfolio;
+export default ProjectContainer;

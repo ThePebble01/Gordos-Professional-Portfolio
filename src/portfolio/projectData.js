@@ -3,7 +3,7 @@ import fruitFinderImage from "./images/fruit-finder.png";
 import pwaTextEditorImage from "./images/pwa-text-editor.png";
 import jsQuizImage from "./images/javascript-quiz.png";
 import passwordGeneratorImage from "./images/password-generator.png";
-export const portfolioData = [
+export const projectData = [
   {
     name: "Travel Buddy",
     deployLink: "https://thepebble01.github.io/travel-weather/",
