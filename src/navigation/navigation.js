@@ -4,7 +4,7 @@ function Navigation() {
   return (
     <>
       <Link to={"/"}>About Me</Link>
-      <Link to={"/portfolio"}>Portfolio</Link>
+      <Link to={"/projects"}>Projects</Link>
       <Link to={"/contact"}>Contact</Link>
     </>
   );
