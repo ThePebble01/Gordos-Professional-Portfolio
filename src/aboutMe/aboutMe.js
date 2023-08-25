@@ -1,7 +1,7 @@
 import devPicture from "./john-gordos.png";
 import "./aboutMe.css";
 
-function App() {
+export default function App() {
   return (
     <section className="about-me">
       <h2>About Me</h2>
@@ -19,5 +19,3 @@ function App() {
     </section>
   );
 }
-
-export default App;

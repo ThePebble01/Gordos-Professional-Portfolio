@@ -3,6 +3,7 @@ footer {
   justify-content: space-evenly;
   text-align: center;
   padding-top: 1%;
+  padding-bottom: 2%;
   border-top: solid black;
 }
 @media screen and (max-width: 768px) {

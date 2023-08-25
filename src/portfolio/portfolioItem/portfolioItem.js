@@ -1,5 +1,5 @@
 import "./portfolioItem.css";
-function PortfolioItem({
+export default function PortfolioItem({
   name,
   deployLink,
   repoLink,
@@ -26,11 +26,9 @@ function PortfolioItem({
       <h5>Technology Used</h5>
       <ul>
         {technologies.map((tech) => {
-          return <li>{tech}</li>;
+          return <li key={tech}>{tech}</li>;
         })}
       </ul>
     </div>
   );
 }
-
-export default PortfolioItem;

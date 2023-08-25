@@ -1,13 +1,23 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function Navigation() {
+export default function Navigation() {
+  const navigate = useNavigate();
+  function handleClick(e) {
+    e.preventDefault();
+    const link = e.currentTarget.id;
+    navigate(`/${link}`);
+  }
   return (
-    <>
-      <Link to={"/"}>About Me</Link>
-      <Link to={"/projects"}>Projects</Link>
-      <Link to={"/contact"}>Contact</Link>
-    </>
+    <div className="tab">
+      <button id="aboutMe" className="tablinks" onClick={handleClick}>
+        About Me
+      </button>
+      <button id="projects" className="tablinks" onClick={handleClick}>
+        Projects
+      </button>
+      <button id="contact" className="tablinks" onClick={handleClick}>
+        Contact
+      </button>
+    </div>
   );
 }
-
-export default Navigation;
