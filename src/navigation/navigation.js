@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Navigation() {
+export default function Navigation() {
   return (
     <>
       <Link to={"/"}>About Me</Link>
@@ -9,5 +9,3 @@ function Navigation() {
     </>
   );
 }
-
-export default Navigation;

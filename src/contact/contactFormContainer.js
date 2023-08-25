@@ -1,8 +1,9 @@
 import { useState } from "react";
 import ContactForm from "./contactForm/contactForm";
 import FormErrors from "./formErrors/formErrors.js";
+import "bootstrap/dist/css/bootstrap.css";
 import Form from "react-bootstrap/Form";
-function Contact() {
+export default function ContactFormContainer() {
   let [errorMessage, setError] = useState();
   let [successMessage, setSuccess] = useState();
   const handleOnBlur = (event) => {
@@ -56,5 +57,3 @@ function Contact() {
     );
   }
 }
-
-export default Contact;

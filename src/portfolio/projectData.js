@@ -29,7 +29,7 @@ export const projectData = [
     imgAlt:
       "Fruit Finder landing page, showing the most recent fruit sightings",
     description:
-      "This application utilizes a MySQL database to fruit, locations, and fruit sightings.  Fruit data was initially loaded from https://fruityvice.com/.  Heroku Scheduler was leveraged to display the 'Fruit of the Day' on the homepage.",
+      "This application utilizes a MySQL database to store data about fruit and their locations.  Fruit data was initially loaded from https://fruityvice.com/.  Heroku Scheduler was leveraged to display the 'Fruit of the Day'.",
     technologies: [
       "Javascript",
       "MySQL Database",
