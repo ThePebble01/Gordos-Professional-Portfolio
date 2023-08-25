@@ -34,26 +34,23 @@ export default function ContactFormContainer() {
       .then(setSuccess("You have successfully submitted a case!"))
       .catch((error) => console.log("error", error));
   }
-  if (successMessage) {
-    return (
-      <section id="contact" className="container">
-        <h2>Contact</h2>
+  return (
+    <section id="contact" className="container">
+      <h2>Contact</h2>
+      {successMessage ? (
         <center className="mb-3">
           <Form.Label>{successMessage}</Form.Label>
         </center>
-      </section>
-    );
-  } else {
-    return (
-      <section id="contact" className="container">
-        <h2>Contact</h2>
-        <ContactForm
-          handleOnBlur={handleOnBlur}
-          handleOnSubmit={handleOnSubmit}
-        />
-        <br />
-        <FormErrors errorMessage={errorMessage} />
-      </section>
-    );
-  }
+      ) : (
+        <>
+          <ContactForm
+            handleOnBlur={handleOnBlur}
+            handleOnSubmit={handleOnSubmit}
+          />
+          <br />
+          <FormErrors errorMessage={errorMessage} />
+        </>
+      )}
+    </section>
+  );
 }
