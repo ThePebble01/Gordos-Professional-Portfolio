@@ -2,7 +2,7 @@ import { useState } from "react";
 import ContactForm from "./contactForm/contactForm";
 import FormErrors from "./formErrors/formErrors.js";
 import "bootstrap/dist/css/bootstrap.css";
-import Form from "react-bootstrap/Form";
+import "./contactFormContainer.css";
 export default function ContactFormContainer() {
   let [errorMessage, setError] = useState();
   let [successMessage, setSuccess] = useState();
@@ -31,29 +31,39 @@ export default function ContactFormContainer() {
       }
     )
       .then((response) => response.text())
-      .then(setSuccess("You have successfully submitted a case!"))
+      .then(handleCaseSubmission())
       .catch((error) => console.log("error", error));
   }
-  if (successMessage) {
-    return (
-      <section id="contact" className="container">
-        <h2>Contact</h2>
-        <center className="mb-3">
-          <Form.Label>{successMessage}</Form.Label>
-        </center>
-      </section>
+  function handleCaseSubmission() {
+    setSuccess(
+      "You have successfully submitted a case!  The component will refresh momentarily."
     );
-  } else {
-    return (
-      <section id="contact" className="container">
-        <h2>Contact</h2>
-        <ContactForm
-          handleOnBlur={handleOnBlur}
-          handleOnSubmit={handleOnSubmit}
-        />
-        <br />
-        <FormErrors errorMessage={errorMessage} />
-      </section>
-    );
+    let secondsRemaining = 5;
+    let successMsgTimer = setInterval(function () {
+      secondsRemaining--;
+      if (secondsRemaining <= 0) {
+        setSuccess(null);
+        clearInterval(successMsgTimer);
+      }
+    }, 1000);
   }
+  return (
+    <section id="contact" className="container">
+      <h2>Contact</h2>
+      {successMessage ? (
+        <center className="mb-3 success-message-container">
+          {successMessage}
+        </center>
+      ) : (
+        <>
+          <ContactForm
+            handleOnBlur={handleOnBlur}
+            handleOnSubmit={handleOnSubmit}
+          />
+          <br />
+          <FormErrors errorMessage={errorMessage} />
+        </>
+      )}
+    </section>
+  );
 }
