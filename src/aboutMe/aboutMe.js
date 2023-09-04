@@ -11,7 +11,7 @@ export default function App() {
         help maintain and implement scalable solutions. Excellent
         problem-solving skills. Strong understanding of the software development
         lifecycle on the Salesforce platform. Adept knowledge of Salesforce’s
-        Security Model allowing for proper user management. Solid ability to
+        security model allowing for proper user management. Solid ability to
         utilize Apex, SOQL, Flows, Process Builders. Solid understanding of
         Sales and Service Cloud features. Expert at modeling data and
         customizing objects and fields. Recently graduated from a full-stack
@@ -19,7 +19,7 @@ export default function App() {
         and facilitate his transition back to work. Check out some of his work
         under the Project section!
       </p>
-      <img src={devPicture} alt="The quote unquote developer." />
+      <img src={devPicture} alt="Picture of the developer." />
     </section>
   );
 }
