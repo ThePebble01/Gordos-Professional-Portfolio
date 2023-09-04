@@ -1,12 +1,9 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { d } from "../d.js";
-import { x } from "../../aboutMe/x.js";
-import { s } from "../../footer/s.js";
 export default function ContactForm({ handleOnBlur, handleOnSubmit }) {
   function collectFormData(e) {
     e.preventDefault();
-    const oid = d + x + s;
+    const oid = "00D1a000000KLMa";
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const subject = document.getElementById("subject").value;
