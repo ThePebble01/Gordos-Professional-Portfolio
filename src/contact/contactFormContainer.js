@@ -2,7 +2,6 @@ import { useState } from "react";
 import ContactForm from "./contactForm/contactForm";
 import FormErrors from "./formErrors/formErrors.js";
 import "bootstrap/dist/css/bootstrap.css";
-import "./contactFormContainer.css";
 export default function ContactFormContainer() {
   let [errorMessage, setError] = useState();
   let [successMessage, setSuccess] = useState();
@@ -51,9 +50,7 @@ export default function ContactFormContainer() {
     <section id="contact" className="container">
       <h2>Contact</h2>
       {successMessage ? (
-        <center className="mb-3 success-message-container">
-          {successMessage}
-        </center>
+        <center className="mb-3">{successMessage}</center>
       ) : (
         <>
           <ContactForm

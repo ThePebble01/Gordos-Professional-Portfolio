@@ -1,14 +1,20 @@
-import { Link } from "react-router-dom";
 import "./footer.css";
+import GithubIcon from "./images/github.png";
+import EnvelopeIcon from "./images/envelope.png";
+import SalesforceIcon from "./images/SalesforceIcon.svg";
 
 function Footer() {
   return (
     <footer>
-      <Link to={"https://github.com/ThePebble01"}>Github:ThePebble01</Link>
-      <Link to={"mailto:john.gordos@outlook.com"}>john.gordos@outlook.com</Link>
-      <Link to={"https://www.salesforce.com/trailblazer/jgordos"}>
-        Trailblazer Profile
-      </Link>
+      <a href="https://github.com/ThePebble01">
+        <img src={GithubIcon} style={{ width: "30px", height: "20px" }} />
+      </a>
+      <a href="mailto:john.gordos@outlook.com">
+        <img src={EnvelopeIcon} style={{ width: "50px", height: "20px" }} />
+      </a>
+      <a href="https://www.salesforce.com/trailblazer/jgordos">
+        <img src={SalesforceIcon} style={{ width: "50px", height: "20px" }} />
+      </a>
     </footer>
   );
 }
