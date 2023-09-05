@@ -5,14 +5,14 @@ import jsQuizImage from "./images/javascript-quiz.png";
 import passwordGeneratorImage from "./images/password-generator.png";
 export const projectData = [
   {
-    name: "Travel Buddy",
+    name: "Travel Weather",
     deployLink: "https://thepebble01.github.io/travel-weather/",
     repoLink: "https://github.com/ThePebble01/travel-weather",
     imgSrc: travelBuddyImage,
     imgAlt:
-      "Travel Buddy interface showing a route from Colorado to New Mexico with weather along the way.",
+      "Travel Weather interface showing a route from Colorado to New Mexico with weather along the way.",
     description:
-      "This application leverages Mapbox and OpenWeather API so that users can plot a trip and see weather along the way, instead of having to use separate applications.",
+      "This application leverages Mapbox and OpenWeather API so that users can plot a trip and see weather along a route, instead of having to use separate applications.",
     technologies: [
       "Javascript",
       "JQuery",
