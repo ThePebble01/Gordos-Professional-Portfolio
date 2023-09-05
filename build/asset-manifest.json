@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gordos-Professional-Portfolio/static/css/main.92265eb4.css",
-    "main.js": "/Gordos-Professional-Portfolio/static/js/main.b2e3e6cc.js",
+    "main.js": "/Gordos-Professional-Portfolio/static/js/main.e9c56319.js",
     "static/media/travel-buddy.png": "/Gordos-Professional-Portfolio/static/media/travel-buddy.b017f19ed0cd41fa5d48.png",
     "static/media/john-gordos.png": "/Gordos-Professional-Portfolio/static/media/john-gordos.a005d49ab96ab0ecf2c5.png",
     "static/media/fruit-finder.png": "/Gordos-Professional-Portfolio/static/media/fruit-finder.6e7ab6ed1a9587f95c48.png",
@@ -12,10 +12,10 @@
     "static/media/SalesforceIcon.svg": "/Gordos-Professional-Portfolio/static/media/SalesforceIcon.fbabb57f63bc10157c85c4ff081a9f88.svg",
     "index.html": "/Gordos-Professional-Portfolio/index.html",
     "main.92265eb4.css.map": "/Gordos-Professional-Portfolio/static/css/main.92265eb4.css.map",
-    "main.b2e3e6cc.js.map": "/Gordos-Professional-Portfolio/static/js/main.b2e3e6cc.js.map"
+    "main.e9c56319.js.map": "/Gordos-Professional-Portfolio/static/js/main.e9c56319.js.map"
   },
   "entrypoints": [
     "static/css/main.92265eb4.css",
-    "static/js/main.b2e3e6cc.js"
+    "static/js/main.e9c56319.js"
   ]
 }
